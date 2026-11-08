@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneakers Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 40px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      width: 330px;
+      margin: 0 auto;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-category {
+      font-size: 12px;
+      color: #06c;
+      text-transform: 1.5px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .product-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .price-section {
+      margin-bottom: 20px;
+    }
+
+    .price-section .price {
+      font-size: 26px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .price-section .original-price {
+      font-size: 16px;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 8px;
+    }
+
+    .style-option-wrapper {
+      border: none;
+    }
+
+    .size-label-text {
+      font-size: 13px;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .style-options {
+      margin-bottom: 25px;
+    }
+
+    .style-options input[type="radio"] {
+      display: none;
+    }
+
+    .style-options label {
+      display: inline-block;
+      width: 100px;
+      height: 44px;
+      border: 2px solid #eee;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 8px;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .style-options input[type="radio"]:checked+label {
+      background-color: #000;
+      color: #ff0000;
+    }
+
+    .buy-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <article class="product-card">
+    <figure class="product-image">
+      <img src="https://th.bing.com/th/id/OIP.WEjGqzGs3zX9uXQAfefPEwHaF7?80&w=600&auto=format&fit=crop"
+        alt="RTX 4060 TI">
+    </figure>
+
+    <p class="product-category">RTX 4060 TI</p>
+    <h3 class="product-title">RTX 4060 TI GAMING X SLIM 16G</h3>
+
+    <p class="product-description"> kartu grafis untuk bermain game dan membuat konten,berbasis arsitektur Ada
+      Lovelace.GPU ini mendukung ray tracing untuk pencahayaan dan pantulan yang lebih realistis serta DLSS 3 untuk
+      membantu meningkatkan frame rate pada game yang kompatibel.</p>
+
+    <div class="price-section">
+      <span class="price">IDR 24,500,000.00</span>
+      <del class="original-price">IDR 25,847,000.00</del>
+    </div>
+
+    <form action="">
+      <fieldset class="style-option-wrapper">
+        <legend class="style-label-text">Tambahan</legend>
+        <div class="style-options">
+          <input type="radio" name="style" id="s-7" value="7">
+          <label for="s-7">Sticker</label>
+
+          <input type="radio" name="style" id="s-8" value="8">
+          <label for="s-8">Gantungan</label>
+
+          <input type="radio" name="style" id="s-9" value="9">
+          <label for="s-9">Picture</label>
+        </div>
+      </fieldset>
+
+      <button class="buy-button" type="submit">Masukan ke Keranjang</button>
+    </form>
+  </article>
+</body>
+
+</html>
